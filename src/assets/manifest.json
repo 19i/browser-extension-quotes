@@ -1,0 +1,31 @@
+{
+  "manifest_version": 2,
+  "version": "1.0",
+  "minimum_chrome_version": "80",
+  "name": "Цитаты",
+  "description": "Цитаты",
+  "icons": {
+    "128": "icon.png"
+  },
+  "background": {
+    "scripts": ["js/main.js"]
+  },
+  "browser_action": {
+    "default_icon": {
+      "128": "icon.png"
+    },
+    "default_title": "Цитаты",
+    "default_popup": "popup.html"
+  },
+  "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'",
+  "permissions": [
+    "storage",
+    "http://*/*",
+    "https://*/*",
+    "<all_urls>",
+    "unlimitedStorage",
+    "notifications",
+    "tabs"
+  ],
+  "web_accessible_resources": ["*"]
+}

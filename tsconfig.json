@@ -1,0 +1,52 @@
+{
+	"compilerOptions": {
+		"target": "es5",
+		"module": "esnext",
+		"moduleResolution": "node",
+		"resolveJsonModule": true,
+		"allowSyntheticDefaultImports": true,
+		"allowJs": false,
+		"strict": true,
+		"alwaysStrict": true,
+		"sourceMap": true,
+		"importHelpers": true,
+		"forceConsistentCasingInFileNames": true,
+		"noFallthroughCasesInSwitch": true,
+		"noImplicitReturns": true,
+		"noUnusedLocals": false,
+		"noUnusedParameters": true,
+		"noImplicitAny": false,
+		"noImplicitThis": false,
+		"strictNullChecks": false,
+		"experimentalDecorators": true,
+		"emitDecoratorMetadata": true,
+		"declaration": true,
+		"outDir": "dist",
+		"rootDir": ".",
+		"esModuleInterop": true,
+		"strictBindCallApply": true,
+		"skipLibCheck": true,
+		"isolatedModules": true,
+		"baseUrl": ".",
+		"lib": ["es6", "es7", "esnext", "dom"],
+		"paths": {
+			"src/*": ["src/*"],
+			"test/*": ["test/*"],
+			"options/*": ["src/options/*"],
+			"constants/*": ["src/constants/*"],
+			"types/*": ["src/types/*"]
+		}
+	},
+	"files": [
+		"./modules.d.ts"
+	],
+	"include": [
+		"src"
+	],
+	"exclude": [
+		"node_modules",
+		"dist",
+		"dist-prod",
+		"tmp"
+	]
+}

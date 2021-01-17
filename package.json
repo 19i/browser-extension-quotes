@@ -1,0 +1,116 @@
+{
+  "name": "service",
+  "version": "1.0.1",
+  "description": "service",
+  "author": "none",
+  "private": true,
+  "main": "./main.js",
+  "scripts": {
+    "build:dev": "webpack --config builds/extension.js --env development",
+    "build:prod": "webpack --config builds/extension.js --env production",
+    "eslint:main": "eslint --fix . --ext .ts",
+    "eslint:popup": "cd src/popup & eslint --fix . --ext .vue",
+    "prettier:fix": "prettier --write src/**/*.ts",
+    "set:config": "cross-env NODE_ENV=development TS_NODE_PROJECT=tsconfig.json",
+    "test": "jest --detectOpenHandles"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 11"
+  ],
+  "prettier": {
+    "overrides": [
+      {
+        "files": "*.ts",
+        "options": {
+          "parser": "typescript"
+        }
+      },
+      {
+        "files": "*.d.ts",
+        "options": {
+          "semi": false
+        }
+      }
+    ],
+    "printWidth": 140,
+    "tabWidth": 2,
+    "useTabs": true,
+    "semi": true,
+    "singleQuote": true,
+    "trailingComma": "none",
+    "quoteProps": "as-needed",
+    "bracketSpacing": true
+  },
+  "dependencies": {
+    "lodash": "^4.17.20",
+    "mathjs": "^8.0.1",
+    "jquery": "^3.5.1",
+    "moment": "^2.29.1",
+    "moment-timezone": "^0.5.32",
+    "vue": "^2.6.12",
+    "vue-class-component": "^7.2.6",
+    "vue-property-decorator": "^9.1.2",
+    "vuex": "^3.5.1",
+    "vuex-class": "^0.3.2",
+    "vuex-module-decorators": "1.0.1",
+    "vuetify": "^2.3.18",
+    "pino": "^6.7.0",
+    "pino-pretty": "^4.3.0",
+    "reflect-metadata": "^0.1.13",
+    "url-parse": "^1.4.7"
+  },
+  "devDependencies": {
+    "@types/chrome": "^0.0.126",
+    "@types/jquery": "^3.5.4",
+    "@types/lodash": "^4.14.165",
+    "@types/mathjs": "^6.0.7",
+    "@types/node": "^14.14.9",
+    "@types/pino": "^6.3.4",
+    "@typescript-eslint/eslint-plugin": "^4.8.1",
+    "@typescript-eslint/parser": "^4.8.1",
+    "@vue/eslint-config-prettier": "^6.0.0",
+    "@vue/eslint-config-typescript": "^5.1.0",
+    "cache-loader": "^4.1.0",
+    "clean-webpack-plugin": "^3.0.0",
+    "copy-webpack-plugin": "^6.3.2",
+    "css-loader": "^5.0.1",
+    "eslint": "^7.14.0",
+    "eslint-config-airbnb-typescript": "^12.0.0",
+    "eslint-config-prettier": "^6.15.0",
+    "eslint-plugin-filenames": "^1.3.2",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-vue": "^7.1.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "eslint-plugin-jest": "^24.1.3",
+    "file-loader": "^6.2.0",
+    "google-fonts-plugin": "^5.0.2",
+    "html-loader": "^1.3.2",
+    "html-webpack-plugin": "^4.5.0",
+    "imports-loader": "^1.2.0",
+    "javascript-obfuscator": "^2.9.3",
+    "vue-loader": "^15.9.5",
+    "mini-css-extract-plugin": "^1.3.1",
+    "npm-check-updates": "^10.2.2",
+    "optimize-css-assets-webpack-plugin": "^5.0.4",
+    "prettier": "~2.2.0",
+    "node-sass": "^4.14.1",
+    "raw-loader": "^4.0.2",
+    "rimraf": "^3.0.2",
+    "sass-loader": "^8.0.2",
+    "script-ext-html-webpack-plugin": "^2.1.5",
+    "script-loader": "^0.7.2",
+    "style-loader": "^2.0.0",
+    "terser-webpack-plugin": "^5.0.3",
+    "tsconfig-paths": "^3.9.0",
+    "ts-loader": "^8.0.11",
+    "typescript": "^4.1.2",
+    "vue-template-compiler": "^2.6.12",
+    "webpack": "^4.44.2",
+    "webpack-cli": "^3.3.12",
+    "webpack-merge": "^5.4.0",
+    "webpack-node-externals": "^2.5.2",
+    "webpack-obfuscator": "^3.1.0"
+  }
+}

@@ -1,0 +1,17 @@
+node_modules
+coverage
+.vscode
+.nyc_output
+.DS_Store
+*.code-workspace
+.idea
+tmp
+*.log
+logs
+token.json
+report*
+cookies
+sessions
+configs
+dist
+dist-prod
